@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
         <p className="text-black fs-5 m-0 mt-4 font-titillium">
           Welcome to Book Palace, your one-stop destination for a world of
-          books! Whether you're seeking the latest bestsellers, timeless
+          books! Whether you&apos;re seeking the latest bestsellers, timeless
           classics, or hidden gems, our curated collection has something for
           every reader. Dive into new adventures, explore diverse genres, and
           find inspiration with just a click. Join our community of book lovers
