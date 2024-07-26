@@ -11,9 +11,9 @@ const NavBar = () => {
         <Link href="/categories" className="m-0 td-none">
           View All Categories
         </Link>
-        {/* <Link href="/search">
+        <Link href="/search">
           <button className="btn btn-primary m-0">Search for Books</button>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

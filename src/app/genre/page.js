@@ -40,7 +40,7 @@ const Genre = () => {
 
   return (
     <Suspense>
-      <div className="container" style={{ marginTop: 160 }}>
+      <div className="container min-vh-100" style={{ marginTop: 160 }}>
         <div className="d-flex justify-content-between align-items-center my-3">
           <h2 className="m-0 p-0">
             {genre && genre.charAt(0).toUpperCase() + genre.slice(1)}
@@ -53,11 +53,6 @@ const Genre = () => {
             next={getMoreCategoryBooks}
             hasMore={categoryBooks && categoryBooks.length < totalItems}
             loader={<p className="fs-4">Loading...</p>}
-            endMessage={
-              <p style={{ textAlign: "center" }}>
-                <b>Yay! You have seen it all</b>
-              </p>
-            }
           >
             {categoryBooks &&
               categoryBooks.map((element) => {

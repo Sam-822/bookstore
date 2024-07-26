@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-bs-theme="dark">
       <body style={{ overflowX: "hidden" }}>
-        <header>
+        <header style={{ overflowX: "hidden" }}>
           <NavBar />
         </header>
         {children}

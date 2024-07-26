@@ -87,4 +87,5 @@ body {
 #footer{
 	background-image: linear-gradient(320deg, #324773 10%, #111827);
 	height: 200px;
+	perspective: ;
 }
