@@ -14,7 +14,7 @@ const Category = (props) => {
   };
   useEffect(() => {
     getCategoryBooks();
-  });
+  }, []);
 
   return (
     <div className="mt-5">
