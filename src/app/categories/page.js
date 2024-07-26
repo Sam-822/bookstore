@@ -61,7 +61,7 @@ const Categories = () => {
   return (
     <div
       className="container d-flex flex-wrap justify-content-between"
-      style={{ marginTop: 160 }}
+      style={{ marginTop: 160, marginBottom: 80 }}
     >
       <p className="fs-1 text-white w-100">Categories</p>
       {categories.map((element) => {

@@ -1,3 +1,4 @@
+import Footer from "./component/Footer";
 import NavBar from "./component/NavBar";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,12 +11,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-bs-theme='dark'>
-      <body style={{overflowX:'hidden'}}>
+    <html lang="en" data-bs-theme="dark">
+      <body style={{ overflowX: "hidden" }}>
         <header>
           <NavBar />
         </header>
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
