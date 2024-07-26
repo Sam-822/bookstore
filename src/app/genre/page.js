@@ -49,9 +49,9 @@ const Genre = () => {
         <div className="d-flex flex-wrap w-100 justify-content-between">
           <InfiniteScroll
             className="d-flex flex-wrap w-100 justify-content-between px-4 py-4"
-            dataLength={categoryBooks.length}
+            dataLength={categoryBooks && categoryBooks.length}
             next={getMoreCategoryBooks}
-            hasMore={categoryBooks.length < totalItems}
+            hasMore={categoryBooks && categoryBooks.length < totalItems}
             loader={<p className="fs-4">Loading...</p>}
             endMessage={
               <p style={{ textAlign: "center" }}>
