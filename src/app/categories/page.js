@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const Categories = () => {
@@ -61,19 +62,19 @@ const Categories = () => {
   return (
     <div
       className="container d-flex flex-wrap justify-content-between"
-      style={{ marginTop: 160, marginBottom: 80 }}
+      style={{ marginBottom: 80, marginTop:120 }}
     >
       <p className="fs-1 text-white w-100">Categories</p>
       {categories.map((element) => {
         return (
-          <a
+          <Link
             key={element}
             href={`/genre?q=${element}`}
             className="fs-4 mx-3  my-2 glass p-2 rounded border border-black text-reset text-decoration-none"
           >
             {element.charAt(0).toUpperCase() +
               element.substring(1).split("%20").join(" ")}
-          </a>
+          </Link>
         );
       })}
     </div>

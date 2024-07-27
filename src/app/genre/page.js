@@ -48,7 +48,7 @@ const Genre = () => {
         </div>
         <div className="d-flex flex-wrap w-100 justify-content-between">
           <InfiniteScroll
-            className="d-flex flex-wrap w-100 justify-content-between px-4 py-4"
+            className="d-flex flex-wrap w-100 justify-content-center py-4"
             dataLength={categoryBooks && categoryBooks.length}
             next={getMoreCategoryBooks}
             hasMore={categoryBooks && categoryBooks.length < totalItems}

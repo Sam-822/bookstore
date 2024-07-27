@@ -6,7 +6,7 @@ const Hero = () => {
       id="hero"
       className="vw-100 d-flex justify-content-center px-5 align-items-center"
     >
-      <div className="d-flex align-items-center justify-content-start w-50 flex-column">
+      <div className="d-flex align-items-start justify-content-start w-50 flex-column">
         <p className="text-black m-0 font-fraunces" style={{ fontSize: 50 }}>
           Discover Your Next Favorite Book at Book Palace.
         </p>
@@ -18,9 +18,15 @@ const Hero = () => {
           find inspiration with just a click. Join our community of book lovers
           and start your literary journey today!
         </p>
+        <a
+          className="mt-5 btn btn-outline-secondary fs-5"
+          href="#home-categories"
+        >
+          Browse {" "}
+          <i className="bi bi-arrow-down-circle"></i>
+        </a>
       </div>
       <div className="d-flex align-items-center justify-content-start w-50">
-        {/* <p className="fs-5 text-black m-0">Hello</p> */}
         <img
           src="/photo3.png"
           className="w-100 h-100 soft-edge"

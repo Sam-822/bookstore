@@ -8,6 +8,7 @@ const Search = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [totalItems, setTotalItems] = useState(0);
   const [categoryBooks, setCategoryBooks] = useState([]);
+	const [flag, setFlag] = useState(true)
   const handleChange = (e) => {
     setQuery(e.target.value);
   };
@@ -18,6 +19,7 @@ const Search = () => {
     const parsedData = await data.json();
     setCategoryBooks(parsedData.items);
     setTotalItems(parsedData.totalItems);
+		setFlag(!flag)
   };
 
   const getMoreCategoryBooks = async () => {
@@ -47,18 +49,14 @@ const Search = () => {
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
-          <button
-            className="btn btn-primary"
-            type="submit"
-            id="button-addon2"
-          >
+          <button className="btn btn-primary" type="submit" id="button-addon2">
             Search
           </button>
         </div>
       </form>
       <div className="d-flex flex-wrap w-100 justify-content-between">
         <InfiniteScroll
-          className="d-flex flex-wrap w-100 justify-content-between px-4 py-4"
+          className="d-flex flex-wrap w-100 justify-content-center py-4"
           dataLength={categoryBooks && categoryBooks.length}
           next={getMoreCategoryBooks}
           hasMore={categoryBooks && categoryBooks.length < totalItems}
@@ -72,6 +70,7 @@ const Search = () => {
                 console.error(error);
               }
             })}
+				{flag && <p className="fs-2 text-center">Search results appear here</p>}
         </InfiniteScroll>
       </div>
     </div>

@@ -5,7 +5,7 @@ const BookCard = (props) => {
 
   return (
     <>
-      <div className="card my-3 my-card d-flex flex-column justify-content-between pb-4 ">
+      <div className="card my-3 my-card d-flex flex-column justify-content-between pb-4 mx-2 ">
         <a
           href={data.volumeInfo.infoLink ? data.volumeInfo.infoLink : "#"}
           target="_blank"
