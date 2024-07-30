@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import Category from "./component/Category";
 import Hero from "./component/Hero";
 import Link from "next/link";
-import Footer from "./component/Footer";
 
 export default function Home() {
   useEffect(() => {
